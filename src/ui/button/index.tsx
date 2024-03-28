@@ -1,3 +1,4 @@
+import { lato } from "../fonts";
 import { RoundedArrow } from "../icons/rounded-arrow";
 
 export function PrimaryButton({
@@ -10,7 +11,7 @@ export function PrimaryButton({
   return (
     <button
       onClick={onClick}
-      className="bg-black text-white w-full rounded-xl h-14"
+      className={`${lato.className} bg-black text-white w-full rounded-xl h-14`}
     >
       {children}
     </button>
