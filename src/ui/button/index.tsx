@@ -16,7 +16,7 @@ export function ButtonWithIcon({
       onClick={onClick}
       className={`${lato.className} bg-black hover:bg-gray-800 text-white w-full rounded-xl h-14 lg:max-w-39`}
     >
-      <div className="flex gap-2  items-center justify-center">
+      <div className="flex gap-2  items-baseline justify-center">
         {text}
         {icon}
       </div>
