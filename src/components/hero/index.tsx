@@ -1,10 +1,15 @@
 "use client";
-import { PrimaryButton } from "@/ui/button";
+import { ButtonWithIcon } from "@/ui/button";
 import { ArrowIcon } from "@/ui/icons/arrow";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import heroImage from "../../../public/hero.png";
 import { HeroText } from "./text";
 export function HeroSection() {
+  const t = useTranslations("Buttons");
+  function handleClick() {
+    console.log("clicked");
+  }
   return (
     <div className="flex flex-col gap-6 place-items-center bg-white h-full flex-1 px-3  lg:flex-row lg:justify-around lg:w-full lg:max-w-screen-2xl lg:mx-auto lg:px-[72px]">
       <HeroText />
@@ -18,11 +23,11 @@ export function HeroSection() {
         />
       </div>
       <div className="lg:hidden flex flex-col gap-3 w-full max-w-sm items-center justify-center lg:items-start">
-        <PrimaryButton onClick={() => console.log("clicked")}>
-          <div className="flex gap-2 hover:gap-3  items-center justify-center">
-            Get started <ArrowIcon />
-          </div>
-        </PrimaryButton>
+        <ButtonWithIcon
+          text={t("getStarted")}
+          icon={<ArrowIcon />}
+          onClick={handleClick}
+        ></ButtonWithIcon>
       </div>
     </div>
   );
