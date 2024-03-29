@@ -11,7 +11,7 @@ export function PrimaryButton({
   return (
     <button
       onClick={onClick}
-      className={`${lato.className} bg-black text-white w-full rounded-xl h-14`}
+      className={`${lato.className} bg-black text-white w-full rounded-xl h-14 lg:max-w-39`}
     >
       {children}
     </button>

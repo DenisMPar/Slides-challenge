@@ -20,6 +20,13 @@ const config: Config = {
       borderRadius: {
         xl: "10px",
       },
+      maxWidth: {
+        lg: "593px",
+        "39": "157px",
+      },
+      screens: {
+        xl: "1367px",
+      },
     },
   },
   plugins: [],
