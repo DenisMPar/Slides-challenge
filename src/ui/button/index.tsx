@@ -1,11 +1,14 @@
+import { useTranslations } from "next-intl";
 import { lato } from "../fonts";
 import { RoundedArrow } from "../icons/rounded-arrow";
 
-export function PrimaryButton({
-  children,
+export function ButtonWithIcon({
+  icon,
+  text,
   onClick,
 }: {
-  children: React.ReactNode;
+  icon: React.ReactNode;
+  text: string;
   onClick?: () => void;
 }) {
   return (
@@ -13,7 +16,10 @@ export function PrimaryButton({
       onClick={onClick}
       className={`${lato.className} bg-black hover:bg-gray-800 text-white w-full rounded-xl h-14 lg:max-w-39`}
     >
-      {children}
+      <div className="flex gap-2  items-center justify-center">
+        {text}
+        {icon}
+      </div>
     </button>
   );
 }
