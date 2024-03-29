@@ -11,7 +11,7 @@ export function PrimaryButton({
   return (
     <button
       onClick={onClick}
-      className={`${lato.className} bg-black text-white w-full rounded-xl h-14 lg:max-w-39`}
+      className={`${lato.className} bg-black hover:bg-gray-800 text-white w-full rounded-xl h-14 lg:max-w-39`}
     >
       {children}
     </button>
@@ -19,7 +19,11 @@ export function PrimaryButton({
 }
 export function ArrowRoundedButton({ onClick }: { onClick?: () => void }) {
   return (
-    <button className="w-fit" onClick={onClick}>
+    <button
+      className="w-fit hover:animate-bounce"
+      aria-label="arrowButton"
+      onClick={onClick}
+    >
       <RoundedArrow />
     </button>
   );
