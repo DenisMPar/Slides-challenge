@@ -1,9 +1,6 @@
 "use client";
 import { HamburguerIcon } from "@/ui/icons/hamburguer-icon";
-import { Link } from "@/navigation";
 import { useState } from "react";
-import { EnglandFlag } from "@/ui/icons/england";
-import { SpainFlag } from "@/ui/icons/spain";
 import { Language } from "../language";
 
 export function Header() {

@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { lato } from "../fonts";
 import { RoundedArrow } from "../icons/rounded-arrow";
 
