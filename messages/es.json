@@ -1,0 +1,11 @@
+{
+  "HeroSection": {
+    "description": "S O B R E - M Í  — P E R S O N A L",
+    "title": "¡Hola! <bold> Soy Angela Smith </bold>",
+    "subtitleMobile": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+    "subtitleDesktop": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+  },
+  "Buttons": {
+    "getStarted": "Comenzar"
+  }
+}
