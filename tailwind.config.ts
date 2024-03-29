@@ -16,6 +16,7 @@ const config: Config = {
         xl: "10px",
       },
       maxWidth: {
+        sm: "369px",
         lg: "593px",
         "39": "157px",
       },
